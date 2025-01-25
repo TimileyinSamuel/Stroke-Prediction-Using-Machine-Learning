@@ -103,8 +103,6 @@ The *smoking status* plot shows that most individuals have "Never smoked," follo
 ![Picture 1](https://github.com/user-attachments/assets/42902d9a-5b62-45f9-8901-e0d0512ed6d2)
 
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.004.png)
-
 The box plots provide insights into the distribution and variability of numerical features, highlighting key factors influencing stroke risk. The *age* distribution is symmetric, with values ranging from infancy to around 80 years and a median near 45. This balanced representation allows the model to assess stroke prevalence across age groups, a critical risk factor.
 
 The *avg\_glucose\_level* plot is skewed, with most values below 150 mg/dL and several outliers exceeding 200 mg/dL, suggesting the presence of metabolic conditions like diabetes, which elevate stroke risk. Similarly, the *BMI* distribution is skewed, with most values between 20 and 40 kg/m² but extreme outliers nearing 100 kg/m², indicative of severe obesity.
