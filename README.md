@@ -116,7 +116,6 @@ In summary, the box plots reveal that age is normally distributed, while glucose
 ![Picture 1](https://github.com/user-attachments/assets/2bbfee64-374b-4d89-8e55-9f60b1f28ec3)
 
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.005.png)
 
 The distribution plots provide valuable insights into the spread and central tendencies of key features, revealing patterns and anomalies that inform data preprocessing and modeling.
 
