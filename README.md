@@ -1,5 +1,6 @@
 ﻿**STROKE PREDICTION USING MACHINE LEARNING: A COMPARATIVE ANALYSIS OF LOGISTIC REGRESSION, SUPPORT VECTOR MACHINE AND RANDOM FOREST**
 
+
 This project explored the application of machine learning to predict stroke occurrences using a dataset comprising demographic, medical, and lifestyle data. Preprocessing steps included handling missing values, encoding categorical variables, feature scaling, and addressing severe class imbalance through SMOTE, oversampling, undersampling, and class weighting techniques.
 
 Three models—Logistic Regression, Support Vector Machine (SVM), and Random Forest—were selected based on their unique strengths: Logistic Regression for its interpretability, SVM for its ability to handle non-linear relationships, and Random Forest for its capability to capture complex feature interactions. Exploratory Data Analysis (EDA) and data visualizations were conducted to uncover trends and insights, guiding feature selection and engineering.
