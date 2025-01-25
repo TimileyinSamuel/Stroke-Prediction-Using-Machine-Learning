@@ -79,7 +79,8 @@ Both interactive (Plotly, Cufflinks) and static (Seaborn, Matplotlib) libraries 
 
 **Bar Plot for Categorical Features**:
 
-![A group of green rectangular bars
+![Picture 1](https://github.com/user-attachments/assets/0911bb3a-0d35-41cd-b56e-c5906556f89e)
+
 
 Description automatically generated with medium confidence](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.003.png)
 
@@ -93,7 +94,8 @@ The *smoking status* plot shows that most individuals have "Never smoked," follo
 
 **Box Plot for Numerical Features**:
 
-![A screenshot of a graph
+![Picture 1](https://github.com/user-attachments/assets/42902d9a-5b62-45f9-8901-e0d0512ed6d2)
+
 
 Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.004.png)
 
@@ -107,7 +109,8 @@ In summary, the box plots reveal that age is normally distributed, while glucose
 
 **Distribution Plots for Numerical Features**:
 
-![A collage of graphs
+![Picture 1](https://github.com/user-attachments/assets/2bbfee64-374b-4d89-8e55-9f60b1f28ec3)
+
 
 Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.005.png)
 
@@ -122,7 +125,8 @@ The *BMI* distribution is also right-skewed, with a mean of 27.76 kg/m² and a m
 
 **Stroke Rates by Work Type and Residence Type**
 
-![A graph of a number of people
+![Picture 1](https://github.com/user-attachments/assets/a7b860f7-cd6b-41a5-8872-6fa344df2915)
+
 
 Description automatically generated with medium confidence](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.006.png)
 
@@ -177,7 +181,8 @@ The respective result is as follows:
 
 **5.1 Initial Model Performance**
 
-![A screenshot of a computer code
+![Picture 1](https://github.com/user-attachments/assets/4f420e4e-b2a3-41cd-95d7-689e5621c228)
+
 
 Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.007.png)
 
@@ -195,7 +200,8 @@ These results emphasize the need for techniques to address the class imbalance a
 
 **5.2 Five-fold cross-validation**
 
-![A screenshot of a computer program
+![Picture 1](https://github.com/user-attachments/assets/774587f5-eec7-4851-88b1-e218af8ed4a8)
+
 
 Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.008.png)
 
@@ -215,9 +221,9 @@ The dataset suffers from significant class imbalance, with far fewer stroke case
 
 To address this, class weights were introduced to the models, assigning higher weights to the minority class (stroke). This adjustment encourages the models to focus more on correctly identifying stroke cases, balancing the influence of each class during training. Class weighting is a simple yet effective approach, particularly in healthcare, where detecting rare events like strokes is crucial for improving patient outcomes.
 
-![A screenshot of a computer program
+![Picture 1](https://github.com/user-attachments/assets/3682c5b6-b467-43be-bcb9-a68ef0ecc665)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.009.png)
+
 
 The introduction of class weights led to improvements in stroke detection for some models, particularly in recall, while others saw minimal or no improvement. Logistic Regression saw accuracy drop to 71.88%, but recall increased significantly to 0.7708, alongside gains in precision (0.1401) and F1-score (0.2376), indicating a better balance in identifying stroke cases.
 
@@ -234,9 +240,9 @@ This suggests that class weights may not be sufficient for Random Forest and req
 
 <a name="_hlk180097678"></a>**Undersampling** was applied to address the class imbalance by reducing the majority class (non-stroke cases) to match the size of the minority class (stroke cases). This technique creates a balanced dataset by removing excess non-stroke samples, enabling the models to better focus on distinguishing between the two classes. The table below presents the evaluation metrics after applying under sampling. 
 
-![A screenshot of a computer
+![Picture 1](https://github.com/user-attachments/assets/1758bf35-025b-435f-9980-fe4d67b47340)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.010.png)
+
 
 Applying undersampling significantly improved stroke detection across all models, with notable gains in recall and F1-score. Logistic Regression achieved an accuracy of 76.47%, with recall increasing to 0.8039 and F1-score rising to 0.7756, reflecting a strong improvement in balancing predictions for stroke and non-stroke cases.
 
@@ -250,9 +256,8 @@ In summary, undersampling proved highly effective in enhancing stroke detection,
 
 SMOTE** was applied to address the class imbalance by generating synthetic samples for the minority class (stroke cases). This approach balances the dataset without reducing the number of majority class samples, allowing the model to learn more effectively from a balanced dataset while preserving the original data distribution. The table below presents the evaluation metrics after applying SMOTE.
 
-![A screenshot of a computer
+![Picture 1](https://github.com/user-attachments/assets/8eaa2db5-b5a6-4f84-a07c-19aa89e0671d)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.011.png)
 
 Applying SMOTE significantly improved the models' stroke detection performance, with notable gains in precision, recall, and F1-score across all models. Logistic Regression achieved an accuracy of 80.38%, with precision at 0.7916, recall at 0.8247, and an F1-score of 0.8077. These metrics indicate a much-improved balance in identifying both stroke and non-stroke cases.
 
@@ -266,9 +271,8 @@ In summary, SMOTE effectively addressed the class imbalance, significantly enhan
 
 Oversampling was applied to address the class imbalance by replicating minority class (stroke) samples to create a balanced dataset. This technique increases the representation of stroke cases without altering the majority class, allowing the models to better learn patterns associated with the minority class. The table below presents the evaluation metrics for each model after applying oversampling.
 
-![A screenshot of a computer
+![Picture 1](https://github.com/user-attachments/assets/363fc219-4b43-4dcb-9199-c6a6b5d51535)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.012.png)
 
 Applying oversampling improved model performance across all metrics, particularly in precision, recall, and F1-score. Logistic Regression achieved an accuracy of 76.83%, with precision of 0.7547, recall of 0.7953, and an F1-score of 0.7744. These results indicate a substantial improvement in the model's ability to detect strokes while maintaining a balance between precision and recall.
 
@@ -286,9 +290,8 @@ To enhance prediction quality, new features were derived from medical, demograph
 - **Glucose Levels and BMI Categories:** Continuous variables like glucose level and BMI were categorized into ranges to capture risk levels associated with different ranges (e.g., normal, elevated, and high levels). Binning these variables can help the model identify risk thresholds and improve interpretability.
 - **Age Categories:** Age was also binned into categories (e.g., young, middle-aged, senior) to account for age-related risk factors. Feature engineering these variables allows the model to capture medically relevant patterns, potentially improving accuracy.
 
-![A screenshot of a computer program
+![Picture 1](https://github.com/user-attachments/assets/2ae5a6f7-e22a-41ff-9728-71ba882e2ec7)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.013.png)
 
 The application of feature engineering introduced new medically relevant features to the dataset, aiming to improve the models’ ability to detect stroke cases. However, the results indicate mixed outcomes in terms of prediction performance.
 
@@ -305,14 +308,16 @@ SVM demonstrated no improvement in stroke detection, with precision, recall, and
 
 - **Hyperparameter Tuning using Grid Search optimized each model by fine-tuning parameters for improved performance.**
 
-  ![](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.014.png)
+![Picture 1](https://github.com/user-attachments/assets/443e1962-0623-41aa-a1a6-e85ddeb71067)
+
 
   Grid search result integration
 
 
-![A screenshot of a computer program
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.015.png)
+![Picture 1](https://github.com/user-attachments/assets/3e585074-584c-4a6b-8c72-98d144494b1e)
+
+
 
 After hyperparameter tuning, the performance of Random Forest and Support Vector Machine (SVM) showed some improvement in detecting stroke cases, while Logistic Regression continued to struggle.
 
@@ -324,19 +329,18 @@ SVM maintained an accuracy of 95.12%, but its precision, recall, and F1-score re
 
 - **Dropping of redundant features**
 
-![A screenshot of a computer program
+![Picture 1](https://github.com/user-attachments/assets/87e12871-aeda-4445-adee-ba17d4fcf6e6)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.016.png)
 
 **5.4.** A *Voting Strategy* was also implemented, combining predictions from Logistic Regression, Random Forest, and SVM. This ensemble approach leverages the strengths of each model, enhancing accuracy and consistency to create a robust stroke prediction system.
 
-![](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.017.png)
+![Picture 1](https://github.com/user-attachments/assets/9d19eb1e-12ec-4b3e-84c7-b5c511f8764a)
+
 
 6. **Result Discussion and Conclusion**
 
-` `**![A screenshot of a computer screen
+![Picture 1](https://github.com/user-attachments/assets/61d6db01-3620-49cf-8f0e-83f0febd8da6)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.018.png)**
 
 The final results highlight the performance of Logistic Regression, Random Forest, and Support Vector Machine (SVM) in predicting stroke cases, with evaluations based on precision, recall, F1-score, and accuracy.
 
@@ -350,9 +354,8 @@ The final results highlight the performance of Logistic Regression, Random Fores
 
 **Confusion matrices** were generated for each model to visualize how well the models predicted stroke occurrences, displaying the number of true positives, true negatives, false positives, and false negatives.
 
-![A blue squares with white squares
+![Picture 1](https://github.com/user-attachments/assets/43129ce2-4ea2-4bc9-85b0-edb7a630cf01)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.019.png)
 
 The confusion matrices illustrate each model's ability to predict stroke (Class 1) and non-stroke (Class 0) cases. Logistic Regression and SVM both perform well in identifying non-stroke cases, achieving high true negatives, as evident from the large number of correctly classified non-stroke cases. However, both models fail entirely in detecting stroke cases, with zero true positives and a high number of false negatives. This indicates that Logistic Regression and SVM are biased toward the majority class, predicting nearly all cases as non-stroke.
 
@@ -379,12 +382,4 @@ This project aimed to predict stroke occurrences using Logistic Regression, Rand
 
 Logistic Regression and SVM achieved high accuracy for non-stroke predictions but completely failed to identify stroke cases, making them unsuitable for balanced stroke detection. Random Forest demonstrated the best overall performance, achieving a better balance by identifying more stroke cases, as confirmed by the confusion matrix analysis.
 
-In conclusion, Random Forest emerged as the most reliable model for stroke prediction, effectively balancing stroke and non-stroke detection. 
-
-
-
-**References**
-
-World Health Organization. (2020). **Cardiovascular diseases (CVDs)**. Retrieved from [https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-%28cvds%29)
-
-Centers for Disease Control and Prevention. (2020). **Stroke facts**. Retrieved from <https://www.cdc.gov/stroke/data-researcstats/?CDC_AAref_Val=https://www.cdc.gov/stroke/facts.htm> 
+In conclusion, Random Forest emerged as the most reliable model for stroke prediction, effectively balancing stroke and non-stroke detection.
