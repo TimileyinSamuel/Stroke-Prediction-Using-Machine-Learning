@@ -192,7 +192,6 @@ The respective result is as follows:
 ![Picture 1](https://github.com/user-attachments/assets/4f420e4e-b2a3-41cd-95d7-689e5621c228)
 
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.007.png)
 
 The initial performance of the models demonstrates high accuracy but significant challenges in detecting stroke cases due to class imbalance. All three models: Logistic Regression, Random Forest, and SVM achieved an accuracy of 94.31%. However, they failed to identify any stroke cases, as evidenced by zero values for precision, recall, and F1-score. This indicates that all models are defaulting to predicting the majority class (non-stroke), neglecting the minority class entirely.
 
@@ -211,7 +210,6 @@ These results emphasize the need for techniques to address the class imbalance a
 ![Picture 1](https://github.com/user-attachments/assets/774587f5-eec7-4851-88b1-e218af8ed4a8)
 
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.008.png)
 
 The application of 5-fold cross-validation provided more stable accuracy measures but had minimal impact on stroke detection. Logistic Regression showed an accuracy increase from 94.31% to 95.11%, with a precision of 0.3333. However, recall remained extremely low at 0.0040, resulting in an F1-score of 0.0079, indicating persistent difficulty in identifying stroke cases.
 
