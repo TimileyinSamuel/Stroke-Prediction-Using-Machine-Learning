@@ -92,8 +92,6 @@ Both interactive (Plotly, Cufflinks) and static (Seaborn, Matplotlib) libraries 
 ![Picture 1](https://github.com/user-attachments/assets/0911bb3a-0d35-41cd-b56e-c5906556f89e)
 
 
-Description automatically generated with medium confidence](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.003.png)
-
 Bar plots reveal key categorical feature distributions. More females (3,000) than males (2,100) are present, which could indicate gender disparities in stroke risk. Marital status, with most patients married, may indirectly affect stroke risk through social and economic factors, particularly when combined with health-related features.
 
 The *work type* plot shows that most patients fall into the "Private" category, followed by "Self-employed" and "Govt\_job," with smaller counts in the "Children" and "Never worked" groups. This distribution may reflect differences in stress levels, healthcare access, and lifestyle habits, all of which influence stroke risk. Lower counts in "Children" and "Never worked" likely represent younger or less exposed populations with naturally lower stroke risk.
