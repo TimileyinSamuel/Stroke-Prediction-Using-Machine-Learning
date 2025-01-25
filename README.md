@@ -56,13 +56,14 @@ The following steps were taken to explore and visualize the dataset.
 
 **2.1 Exploratory Data Analysis (EDA)**
 
-![](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.001.png)
+![Picture 1](https://github.com/user-attachments/assets/70b12aad-4ab0-4af4-af0c-ca2cbda69ee1)
+
 
 To streamline the analysis, the dataset was divided into numerical and categorical columns for efficient access and organization.
 
-![A blue circle with a red triangle and a triangle in the middle
+![Picture 1](https://github.com/user-attachments/assets/028c28e3-9e63-4f8a-9918-661c1a942cfe)
 
-Description automatically generated](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.002.png)
+
 
 - **Categorical Data**: The categorical columns were examined to identify unique values and their frequencies. For example, the *gender* column includes three unique values: "Female" (2,994 entries), "Male" (2,115 entries), and "Other" (1 entry).
 - **Numerical Data**: Key statistics such as mean, median, and range were calculated for numerical columns. Notably, the *BMI* column has 3.9% missing values (201 entries). Rather than removing rows with missing values, which would reduce the dataset size, the missing BMI values were imputed with the mean.
