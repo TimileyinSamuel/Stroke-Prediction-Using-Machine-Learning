@@ -132,7 +132,6 @@ The *BMI* distribution is also right-skewed, with a mean of 27.76 kg/m² and a m
 ![Picture 1](https://github.com/user-attachments/assets/a7b860f7-cd6b-41a5-8872-6fa344df2915)
 
 
-Description automatically generated with medium confidence](Aspose.Words.af84e83f-4c14-4895-9b8a-2baef9837158.006.png)
 
 The heatmap illustrates stroke rates by work type and residence type, highlighting the distribution of stroke (1) and non-stroke (0) cases. The intensity of color represents the count of individuals in each category, with darker shades indicating higher counts.
 
